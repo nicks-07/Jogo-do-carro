@@ -1,0 +1,27 @@
+<!doctype html> <!-- Declara o documento como HTML5 -->
+<html lang="pt-BR"> <!-- Idioma do documento: Português do Brasil -->
+<head>
+  <meta charset="utf-8"> <!-- Define codificação de caracteres -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Responsivo em dispositivos -->
+  <title>Jogo do Carrinho</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="styles.css"> <!-- Liga o CSS externo -->
+</head>
+<body>
+  <!-- Contêiner que centraliza todo o jogo na tela -->
+  <div class="game-wrapper">
+    <!-- Canvas onde o jogo será desenhado -->
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <!-- Mensagem de Game Over (escondida até ser necessária) -->
+    <div id="gameOver" class="overlay hidden">
+      <p id="scoreText">Pontuação: 0</p>
+      <button id="restartBtn">Reiniciar</button>
+    </div>
+    <!-- Instruções simples visíveis abaixo do canvas -->
+    <div class="instructions">
+      <p>Use as setas esquerda - direita para mover. Evite os carros vermelhos!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Liga o JavaScript externo -->
+</body>
+</html>
